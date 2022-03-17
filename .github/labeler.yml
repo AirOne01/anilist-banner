@@ -1,0 +1,11 @@
+repo:
+- '*'
+
+src:
+- 'src/**/*'
+
+pug_templates:
+- 'views/**/*.pug'
+
+style:
+- 'public/**/*.css'

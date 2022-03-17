@@ -4,11 +4,11 @@ import path from 'path';
 const app = express();
 app.set('view engine', 'pug');
 
-app.get('/style.css', (req, res) => {
+app.get('/style.css', (_, res) => {
   res.sendFile(path.resolve(__dirname, 'style.css'));
 });
 
-app.get('/api', (req, res) => {
+app.get('/api', (_, res) => {
   res.render('api');
 });
 
