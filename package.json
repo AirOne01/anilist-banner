@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "yarn run tailwind:css && tsc",
+    "dev": "yarn run watch-ts",
     "postinstall": "yarn run build",
     "start": "node dist/index.js",
     "tailwind:css": "postcss public/styles/tailwind.css -o dist/style.css",
     "watch-node": "nodemon dist/index.js",
-    "watch-ts": "nodemon src/index.ts"
+    "watch-ts": "nodemon -e js,mjs,ts,pug --exec \"yarn build && yarn start\""
   },
   "repository": {
     "type": "git",
