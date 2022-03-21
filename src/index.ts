@@ -14,6 +14,10 @@ app.get('/api', (_, res) => {
   res.render('api');
 });
 
+app.get('/', (_, res) => {
+  res.sendFile(path.resolve(__dirname, '..', 'public', 'index.html'));
+})
+
 app.listen(process.env.PORT || 8080, () => {
   console.log('Listenning for requests');
 });
