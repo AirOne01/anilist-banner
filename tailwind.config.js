@@ -2,11 +2,11 @@ module.exports = {
   content: [
     './views/**/*.pug',
     './public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}',
+    './src/**/*.{js,jsx,ts,tsx,vue}'
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: {},
-  plugins: [],
-};
+  plugins: []
+}
