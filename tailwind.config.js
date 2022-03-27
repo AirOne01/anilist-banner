@@ -1,8 +1,8 @@
 module.exports = {
+  mode: 'jit',
   content: [
     './views/**/*.pug',
     './public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}'
   ],
   theme: {
     extend: {}
