@@ -4,7 +4,7 @@
   "description": "## TODO:",
   "main": "index.js",
   "scripts": {
-    "build": "yarn run tailwind:css && tsc",
+    "build": "tsc",
     "dev": "yarn run watch-ts",
     "fix": "npx standard --fix",
     "postinstall": "yarn run build",
@@ -12,7 +12,8 @@
     "tailwind:css": "postcss public/styles/tailwind.css -o dist/style.css",
     "test": "npx standard",
     "watch-node": "nodemon dist/index.js",
-    "watch-ts": "nodemon -e js,mjs,ts,pug,html --exec \"yarn build && yarn start\""
+    "watch-ts": "nodemon -e js,mjs,ts --exec \"yarn build && yarn start\"",
+    "watch-css": "nodemon -e pug,html --exec \"yarn run tailwind:css\""
   },
   "repository": {
     "type": "git",
