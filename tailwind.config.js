@@ -2,7 +2,7 @@ module.exports = {
   mode: 'jit',
   content: [
     './views/**/*.pug',
-    './public/**/*.html',
+    './public/**/*.html'
   ],
   theme: {
     extend: {}

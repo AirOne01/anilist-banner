@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "build:css": "npx postcss ./public/styles/tailwind.css -o ./dist/style.css",
+    "build:css": "postcss ./public/styles/tailwind.css -o ./dist/style.css",
     "dev": "yarn run watch-ts",
-    "fix": "npx standard --fix",
+    "fix": "standard --fix",
     "postinstall": "yarn run build",
     "start": "node dist/index.js",
-    "test": "npx standard",
+    "test": "standard",
     "watch:node": "nodemon dist/index.js",
     "watch:ts": "nodemon -L -e js,mjs,ts --exec \"yarn build && yarn start\"",
     "watch:css": "postcss ./public/styles/tailwind.css -o ./dist/style.css --watch"
