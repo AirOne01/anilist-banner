@@ -1,3 +1,7 @@
+# This project was abandonned
+
+For future reference, this was supposed to be an API endpoint returning a banner image to use on an anilist profile, given options as arguments. Not gonna pick that up
+
 # Anilist banner
 
 [![Heroku deployement status](https://github.com/AirOne01/anilist-banner/actions/workflows/heroku.yml/badge.svg)](https://github.com/AirOne01/anilist-banner/actions/workflows/main.yml)
